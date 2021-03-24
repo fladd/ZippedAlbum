@@ -2,7 +2,7 @@
 A suggestion for a self-contained music album format
 
 ## Specification
-A simple ZIP file (not necessarily compressed), with the audio files in lossy (opus) or lossles (flac) format, and an optional digital booklet in PDF format. For compatility with current players, additional cover image(s) can be included.
+A simple ZIP file (not necessarily compressed), with the audio files in lossy (opus) or lossles (flac) format, and an optional digital booklet in PDF format (square paper size) of which the first page is the album cover. For compatility with current players, additional cover image(s) can be included.
 
 ```
 ├── *.zip
