@@ -2,7 +2,7 @@
 A suggestion for a self-contained music album format
 
 ## Specification
-A simple ZIP file (not necessarily compressed), with the audio files in lossy (opus) or lossles (flac) format, and an optional digital booklet in PDF format (square paper size) of which the first page is the album cover. For compatility with current players, additional cover image(s) can be included.
+A simple ZIP file (not necessarily compressed, not necessarily with .zip ending), with the audio files in lossy (opus) or lossles (flac) format, and an optional digital booklet in PDF format (square paper size) of which the first page is the album cover. For compatility with current players, additional cover image(s) can be included.
 
 ```
 ├── *.zip
@@ -35,7 +35,7 @@ The following ZIP files would each be recognized as a ZippedAlbum. The first exa
 ```
 
 ```
-├── Artist-Album_Title.zip
+├── Artist-Album_Title.zlbm
 │   ├── 01.opus
 │   ├── 02.opus
 │   ├── 03.opus
