@@ -72,7 +72,7 @@ The following ZIP files would each be recognized as a ZippedAlbum. While I am no
 
 ```
 
-Contents of the playlist.xspf:
+Contents of playlist.xspf:
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
