@@ -7,13 +7,11 @@ A simple ZIP file (not necessarily compressed, not necessarily with .zip extensi
 ```
 ├── *.zip|zlbm|*
 │   ├── *.opus|flac
-│   ├── *.opus|flac
 │   ├── ...
-│   ├── (*.pdf)
-│   ├── (*.jpeg|png)
-│   ├── (*.jpeg|png)
+│   ├── [*.pdf]
+│   ├── [*.jpeg|png]
 │   ├── ...
-|   ├── (*.xspf)
+|   ├── [*.xspf]
 ```
 
 ## Examples
@@ -21,7 +19,7 @@ The following ZIP files would each be recognized as a ZippedAlbum. While I am no
 
 **Simplest form with a PDF booklet:**
 ```
-├── Artist-Album_Title.zip
+├── Artist-Album_Title.zlbm
 │   ├── Artist-Album_Title-01-First_Song.opus
 │   ├── Artist-Album_Title-02-Second_Song.opus
 │   ├── Artist-Album_Title-03-Third_Song.opus
@@ -42,7 +40,7 @@ The following ZIP files would each be recognized as a ZippedAlbum. While I am no
 ```
 
 ```
-├── Artist-Album_Title.zlbm
+├── Artist-Album_Title.zip
 │   ├── 01.opus
 │   ├── 02.opus
 │   ├── 03.opus
