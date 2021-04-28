@@ -2,7 +2,7 @@
 A suggestion for an open single-file music album format
 
 ## Specification
-A simple ZIP file (not necessarily compressed, not necessarily with .zip extension), with properly tagged (title, albumartist/artist, tracknumber, date) audio files in lossy (Opus) or lossles (FLAC) format, and an optional digital booklet in PDF format (square paper size) of which the first page is the album cover. For compatility with current players, additional (cover) image(s) can be included. For quickly creating custom compilations/mixtapes without changing the tags of the included audio files, an optional playlist (XSPF) might specify the title, creator and order of tracks.
+A simple ZIP file (not necessarily compressed, not necessarily with .zip extension), with properly tagged (title, albumartist/artist, tracknumber, date) audio files in lossy (Opus) or lossles (FLAC) format, and an optional digital booklet in PDF format (square paper size) of which the first page is the album cover. For compatility with current players, additional (cover) image(s) can be included. For quickly creating custom compilations/mixtapes without changing the tags of the included audio files, an optional playlist (XSPF) might specify the track order, as well as a title, creator and date.
 
 ```
 ├── *.zip|zlbm|*
@@ -77,8 +77,8 @@ Contents of playlist.xspf:
 <playlist version="1" xmlns="http://xspf.org/ns/0/">
 
     <title>Awesome Mixtape</title>
-
     <creator>fladd</creator>
+    <date>2021-04-29T01:40:09.330469+02:00</date>
 
     <trackList>
         <track>
@@ -94,5 +94,6 @@ Contents of playlist.xspf:
             <location>ArtistA_TitleW.opus</location>
         </track>
     </trackList>
+
 </playlist>
 ```
