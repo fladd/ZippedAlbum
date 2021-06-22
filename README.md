@@ -2,7 +2,7 @@
 A suggestion for an open single-file music album format
 
 ## Specification
-A simple ZIP file (not necessarily compressed, not necessarily with .zip extension), with properly tagged (title, albumartist/artist, tracknumber, date) audio files in lossy (Opus) or lossles (FLAC) format, and an optional digital booklet (PDF; square paper size) of which the first page is the album cover. For compatility with current players, additional (cover) images (JPEG, PNG; square format) can be included. For creating custom compilation albums/mixtapes without changing the tags of the included audio files, an optional playlist (XSPF) might specify any of the following: title, creator, date and track order.
+A simple ZIP file (not necessarily compressed, not necessarily with .zip extension), with properly tagged (title, albumartist/artist, tracknumber, date) audio files in lossy (Ogg Opus) or lossles (FLAC; preferrably 44.1/48 Khz, 16 bit) format, and an optional digital booklet (PDF; square paper size) of which the first page is the album cover. For compatility with current players, additional (cover) images (JPEG, PNG; square format) can be included. For creating custom compilation albums/mixtapes without changing the tags of the included audio files, an optional playlist (XSPF) might specify any of the following: title, creator, date and track order.
 
 ```
 ├── *.zip|zlbm|*
